@@ -41,7 +41,7 @@ pipeline {
         
         stage('Override and Deploy BAR') {
          steps {
-                sh "/buildconductor/iib/run-automation.sh overrideAndDeploy tempconvert na na na TEST  TemperatureConverter TemperatureConverter/overrides/development.properties ../brokerFiles-load/DEV/TEST.broker"
+                sh "/buildconductor/iib/run-automation.sh overrideAndDeploy tempconvert na na na TEST iibadmin password  TemperatureConverter TemperatureConverter/overrides/development.properties ../brokerFiles-load/DEV/TEST.broker"
         
           }
         }       
